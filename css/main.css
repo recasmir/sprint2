@@ -3,12 +3,41 @@ header {
 }
 
 .bg-blue {
-  height: 400px;
-  width: 600px;
+  height: 80%;
+  width: 80%;
   right: -50px;
-  bottom: 0;
+  top: 25%;
   border-radius: 40% 0 0 40%;
   z-index: -1;
+}
+
+.bg-blue-left {
+  height: 80%;
+  width: 90%;
+  left: -50px;
+  top: 25%;
+  border-radius: 0 40% 40% 0;
+  z-index: -1;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+#bookmarking-tab {
+  border-bottom: 1px solid grey !important;
+}
+
+#bookmarking-tab:hover {
+  border-bottom: 5px solid #FA5959;
+}
+
+#bookmarking-tab .active {
+  font-weight: bold !important;
+}
+
+#sharing-tab:hover {
+  border: none;
 }
 
 /*!
