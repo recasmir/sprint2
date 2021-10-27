@@ -53,6 +53,11 @@ button#bookmarking-tab, button#searching-tab, button#sharing-tab {
     background-position: 50% 60%;
 }
 
+@media (min-width: 992px){
+    .height-up{
+        height: 150%;
+    }
+ }
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
