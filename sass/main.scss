@@ -1,11 +1,16 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $danger:$secondary;
+$gray-600: #6c757d;
+$gray-800: #343a40;
 
+p{
+    color:$gray-600;
+}
 header{
     margin-bottom: 100px;
 }
-
+//TOP BANNER
 .bg-blue{
     height: 80%;
     width: 80%;
@@ -22,20 +27,32 @@ header{
     border-radius: 0 40% 40% 0;
     z-index: -1;
 }
-.nav-tabs {
+// FEATURES
+.border-none{
     border-bottom: none !important;
 }
-#bookmarking-tab {
-    border-bottom: 1px solid grey !important; 
+button#bookmarking-tab, button#searching-tab, button#sharing-tab {
+    border-bottom: 1px solid #dee2e6 !important;
+    color: $gray-800;
     &:hover{
-        border-bottom: 5px solid $secondary;
+        color: $secondary;
     }
-    .active{
-        font-weight: bold !important;
+    &.active{
+        color: black;
+        border-bottom: 4px solid $secondary !important;
     }
 }
-#sharing-tab:hover{
-    border:none;
-    
+//DOWNLOAD
+.card-img-top{
+    width: 40% !important;
+    height: auto;
 }
+.card-body{
+    background-image: url("../img/bg-dots.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+}
+
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";

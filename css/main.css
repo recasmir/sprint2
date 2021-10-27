@@ -1,3 +1,7 @@
+p {
+  color: #6c757d;
+}
+
 header {
   margin-bottom: 100px;
 }
@@ -20,24 +24,33 @@ header {
   z-index: -1;
 }
 
-.nav-tabs {
+.border-none {
   border-bottom: none !important;
 }
 
-#bookmarking-tab {
-  border-bottom: 1px solid grey !important;
+button#bookmarking-tab, button#searching-tab, button#sharing-tab {
+  border-bottom: 1px solid #dee2e6 !important;
+  color: #343a40;
 }
 
-#bookmarking-tab:hover {
-  border-bottom: 5px solid #FA5959;
+button#bookmarking-tab:hover, button#searching-tab:hover, button#sharing-tab:hover {
+  color: #FA5959;
 }
 
-#bookmarking-tab .active {
-  font-weight: bold !important;
+button#bookmarking-tab.active, button#searching-tab.active, button#sharing-tab.active {
+  color: black;
+  border-bottom: 4px solid #FA5959 !important;
 }
 
-#sharing-tab:hover {
-  border: none;
+.card-img-top {
+  width: 40% !important;
+  height: auto;
+}
+
+.card-body {
+  background-image: url("../img/bg-dots.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
 }
 
 /*!
