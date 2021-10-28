@@ -1,8 +1,11 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $danger:$secondary;
-$gray-600: #6c757d;
-$gray-800: #343a40;
+$accordion-button-active-color: $secondary;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
 
 p{
     color:$gray-600;
@@ -32,13 +35,13 @@ header{
     border-bottom: none !important;
 }
 button#bookmarking-tab, button#searching-tab, button#sharing-tab {
-    border-bottom: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid $gray-300 !important;
     color: $gray-800;
     &:hover{
         color: $secondary;
     }
     &.active{
-        color: black;
+        color: $black;
         border-bottom: 4px solid $secondary !important;
     }
 }
@@ -52,12 +55,35 @@ button#bookmarking-tab, button#searching-tab, button#sharing-tab {
     background-repeat: no-repeat;
     background-position: 50% 60%;
 }
-
+.center-card{
+    width:50%;  
+    margin:0 auto;
+ }
 @media (min-width: 992px){
     .height-up{
-        height: 150%;
+        height: 120%;
     }
  }
+//FAQS
+.accordion {
+    &:first-child { border-top: 1px solid $accordion-border-color; }
+    &:last-child { border-bottom: 1px solid $accordion-border-color; }
+
+    &-button.collapsed:hover{color: $secondary;}
+
+    &-button:not(.collapsed) {
+        color: $black !important;
+        background-color: white !important;
+        box-shadow: none !important;
+    
+        &::after {
+          background-image: escape-svg($accordion-button-active-icon);
+          transform: $accordion-icon-transform;
+        }
+      }
+      
+    &-body {color: $gray-800;}
+}
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
