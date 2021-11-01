@@ -17,7 +17,7 @@ header{
 .bg-blue{
     height: 80%;
     width: 80%;
-    right: -50px;
+    right: 0;
     top: 25%;
     border-radius: 40% 0 0 40%;
     z-index: -1;
@@ -84,6 +84,49 @@ button#bookmarking-tab, button#searching-tab, button#sharing-tab {
       
     &-body {color: $gray-800;}
 }
+//FOOTER
+footer{
+    h6{
+        color:$white;
+        letter-spacing: 3px;
+    }
+    h3{
+        color:$white;
+        width: 25ch; 
+        margin:0 auto;
+    }
+    ul{
+        list-style:none;
+    }   
+}
+.footer-bottom{
+    background-color: #242946;
+}
+.fa-facebook-square, .fa-twitter{
+    font-size: 1.5rem;
+    color: $white;
 
+    &:hover{
+        cursor: pointer;
+        color:$secondary;
+    }
+}
+
+.nav-link{
+    color: $white !important;
+    &:hover{
+        cursor: pointer;
+        color:$secondary !important;
+    }
+}
+.center-y{
+    height: 50% !important;
+    margin: auto 0 !important;
+}
+@media (max-width: 991.98px){
+    .footer-menu{
+        flex-direction: column;
+    }
+ }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
