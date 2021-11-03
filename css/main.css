@@ -13,19 +13,23 @@ header {
 .btn-danger:hover {
   color: #FA5959 !important;
   background-color: #fff !important;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
   color: #5265E1 !important;
   background-color: #fff !important;
+  cursor: pointer;
 }
 
 .btn-light:hover {
   border-color: #000 !important;
+  cursor: pointer;
 }
 
 #menu-top a.nav-link:hover {
-  color: #FA5959;
+  color: #FA5959 !important;
+  cursor: pointer;
 }
 
 .navbar-light .navbar-toggler {
@@ -39,7 +43,7 @@ button.navbar-toggler.collapsed {
 
 .navbar-collapse.collapse.show {
   position: absolute;
-  top: 64px;
+  top: 63px;
   left: 0;
   background-color: rgba(36, 41, 70, 0.9);
   display: -webkit-box;
@@ -69,6 +73,10 @@ button.navbar-toggler.collapsed {
   #menu-top a.nav-link {
     color: #343a40 !important;
   }
+  .social {
+    display: none;
+    margin-top: 20%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -93,7 +101,7 @@ button.navbar-toggler.collapsed {
     width: 90vw;
   }
   .social {
-    padding-top: 30vh;
+    display: inline-block;
   }
 }
 
@@ -126,6 +134,7 @@ button#bookmarking-tab, button#searching-tab, button#sharing-tab {
 
 button#bookmarking-tab:hover, button#searching-tab:hover, button#sharing-tab:hover {
   color: #FA5959 !important;
+  cursor: pointer;
 }
 
 button#bookmarking-tab.active, button#searching-tab.active, button#sharing-tab.active {
@@ -165,6 +174,7 @@ button#bookmarking-tab.active, button#searching-tab.active, button#sharing-tab.a
 
 .accordion-button.collapsed:hover {
   color: #FA5959;
+  cursor: pointer;
 }
 
 .accordion-button:not(.collapsed) {
@@ -258,6 +268,10 @@ footer ul {
   .footer-padding-ul {
     padding-top: 12px;
     padding-left: 0 !important;
+  }
+  .btn-contact-footer {
+    width: inherit;
+    margin-top: 20px;
   }
 }
 

@@ -22,18 +22,22 @@ header{
     &:hover{
         color:$secondary !important;
         background-color: $white !important;
+        cursor: pointer;
     }
 }    
 .btn-primary:hover{
     color: $primary !important;
     background-color: $white !important;
+    cursor: pointer;
 }
 .btn-light:hover{
     border-color: $black !important;
+    cursor: pointer;
 }  
 
 #menu-top a.nav-link:hover{
-    color: $secondary;
+    color: $secondary !important;
+    cursor: pointer;
 }
 
 //TOP MENU WHEN COLLAPSED - HAMBURGER MENU
@@ -47,7 +51,7 @@ button.navbar-toggler.collapsed{
   }
 .navbar-collapse.collapse.show{
     position: absolute;
-    top:64px;
+    top: 63px;
     left:0;
     background-color: rgba($background, 0.9);
     display: flex;
@@ -68,6 +72,10 @@ button.navbar-toggler.collapsed{
 @media (min-width: 992px){
     #menu-top a.nav-link{
         color: $gray-800 !important;
+    }
+    .social{
+        display: none;
+        margin-top: 20%;
     }
     
  }
@@ -94,7 +102,8 @@ button.navbar-toggler.collapsed{
         width: 90vw;
     }
     .social{
-        padding-top: 30vh;
+        display: inline-block;
+        // padding-top: 30vh;
     }
  }
 
@@ -145,6 +154,7 @@ button#bookmarking-tab, button#searching-tab, button#sharing-tab {
     color: $gray-800 !important;
     &:hover{
         color: $secondary !important;
+        cursor: pointer;
     }
     &.active{
         color: $black;
@@ -175,7 +185,10 @@ button#bookmarking-tab, button#searching-tab, button#sharing-tab {
     &:first-child { border-top: 1px solid $accordion-border-color; }
     &:last-child { border-bottom: 1px solid $accordion-border-color; }
 
-    &-button.collapsed:hover{color: $secondary;}
+    &-button.collapsed:hover{
+        color: $secondary;
+        cursor: pointer;
+    }
 
     &-button:not(.collapsed) {
         color: $black !important;
@@ -252,6 +265,10 @@ footer{
     .footer-padding-ul{
         padding-top: 12px;
         padding-left: 0 !important;
+    }
+    .btn-contact-footer{
+        width: inherit;
+        margin-top: 20px;
     }
 
  }
