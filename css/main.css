@@ -10,51 +10,6 @@ header {
   color: #fff !important;
 }
 
-#menu-top.show {
-  background-color: #242946;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#menu-top.show .btn-danger {
-  background-color: transparent;
-  border-color: #fff;
-}
-
-#menu-top.show .fa-facebook-square {
-  color: #fff;
-}
-
-#menu-top.show .fa-twitter {
-  color: #fff;
-}
-
-#menu-top.show a.nav-link {
-  color: #fff !important;
-  border-bottom: 1px solid #f8f9fa;
-  text-align: center;
-}
-
-#menu-top a.nav-link {
-  color: #343a40 !important;
-}
-
-#menu-top a.nav-link:hover {
-  color: #FA5959 !important;
-}
-
-.navbar-toggler {
-  border-color: transparent !important;
-}
-
 .btn-danger:hover {
   color: #FA5959 !important;
   background-color: #fff !important;
@@ -67,6 +22,79 @@ header {
 
 .btn-light:hover {
   border-color: #000 !important;
+}
+
+#menu-top a.nav-link:hover {
+  color: #FA5959;
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent !important;
+  border-color: transparent !important;
+}
+
+button.navbar-toggler.collapsed {
+  border-color: transparent !important;
+}
+
+.navbar-collapse.collapse.show {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  background-color: rgba(36, 41, 70, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.close {
+  background-image: url("../img/icon-close.svg") !important;
+  border-color: transparent !important;
+}
+
+.top-background {
+  background-color: rgba(36, 41, 70, 0.9) !important;
+}
+
+@media (min-width: 992px) {
+  #menu-top a.nav-link {
+    color: #343a40 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #menu-top a.nav-link {
+    color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 20px;
+  }
+  a.first-item {
+    border-top: 1px solid #dee2e6;
+  }
+  #menu-top ul.navbar-nav {
+    width: 95vw;
+    text-align: center;
+    padding-left: 5%;
+    padding-bottom: 15px;
+    margin-top: 30px;
+  }
+  #menu-top button.btn.btn-danger {
+    background: transparent;
+    border-color: white;
+    width: 90vw;
+  }
+  .social {
+    padding-top: 30vh;
+  }
 }
 
 .bg-blue {
