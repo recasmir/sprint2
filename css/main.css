@@ -43,7 +43,7 @@ button.navbar-toggler.collapsed {
 
 .navbar-collapse.collapse.show {
   position: absolute;
-  top: 63px;
+  top: 64px;
   left: 0;
   background-color: rgba(36, 41, 70, 0.9);
   display: -webkit-box;
@@ -102,6 +102,7 @@ button.navbar-toggler.collapsed {
   }
   .social {
     display: inline-block;
+    margin-top: 40px;
   }
 }
 
@@ -273,6 +274,14 @@ footer ul {
     width: inherit;
     margin-top: 20px;
   }
+}
+
+.invalid-feedback {
+  background-color: #FA5959;
+  color: #fff !important;
+  padding: 10px;
+  margin-top: 0 !important;
+  border-radius: 0 0 5px 5px;
 }
 
 /*!

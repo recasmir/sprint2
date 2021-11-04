@@ -253,11 +253,12 @@
       <h3 class="text-center my-3">Stay up-to-date with what we're doing</h3>
       <form class="row justify-content-center my-5 gx-2 needs-validation" novalidate>
         <div class="col-12 col-lg-2">
-            <input type="text" name="" class="form-control" id="validationCustom02" placeholder="Enter your email address">
-            <div class="invalid-feedback" id="errorEmail">Whoops, make sure it's an email</div>
+            <input type="email" name="" class="form-control" id="validationCustom01" placeholder="Enter your email address" required>
+            <div class="invalid-feedback">Whoops, make sure it's an email</div>
+            <div class="valid-feedback">Looks good!</div>
         </div>
         <div class="col-12 col-lg-1">
-          <button type="submit" class="btn btn-danger ps-2 btn-contact-footer">Contact us</button>
+          <button type="submit" class="btn btn-danger ps-2 btn-contact-footer" >Contact us</button>
         </div>
       </form>
     </div>
@@ -318,7 +319,7 @@
   'use strict'
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.getElementsByClassName('needs-validation')
+  var forms = document.querySelectorAll('.needs-validation')
 
   // Loop over them and prevent submission
   Array.prototype.slice.call(forms)

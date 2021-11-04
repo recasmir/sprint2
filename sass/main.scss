@@ -51,7 +51,7 @@ button.navbar-toggler.collapsed{
   }
 .navbar-collapse.collapse.show{
     position: absolute;
-    top: 63px;
+    top: 64px;
     left:0;
     background-color: rgba($background, 0.9);
     display: flex;
@@ -103,30 +103,9 @@ button.navbar-toggler.collapsed{
     }
     .social{
         display: inline-block;
-        // padding-top: 30vh;
+        margin-top: 40px;
     }
  }
-
-
- 
-
-
-
-
-
-//     &.fa-facebook-square{
-//         color: $white;
-//     }
-//     &.fa-twitter{
-//         color: $white;
-//     }
-
-// }
-
-
-
-
-
 
 //TOP BANNER
 .bg-blue{
@@ -271,6 +250,13 @@ footer{
         margin-top: 20px;
     }
 
+ }
+ .invalid-feedback{
+    background-color: $secondary;
+    color: $white !important;
+    padding: 10px;
+    margin-top: 0 !important;
+    border-radius: 0 0 5px 5px;
  }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
